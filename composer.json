@@ -1,0 +1,33 @@
+{
+    "name": "ecomdev/async-log",
+    "description": "Async socket service that appends to log file",
+    "type": "project",
+    "require": {
+        "react/socket": "^1.2",
+        "react/event-loop": "^1.1",
+        "react/stream": "^1.1",
+        "ecomdev/reactive-socket": "^1.1"
+    },
+    "require-dev": {
+        "ecomdev/react-event-loop-test-utils": "^1.1",
+        "phpunit/phpunit": "^8.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ivan Chepurnyi",
+            "email": "ivan.chepurnyi@ecomdev.org"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "EcomDev\\AsyncLog\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "EcomDev\\AsyncLog\\": "tests/"
+        }
+    }
+}

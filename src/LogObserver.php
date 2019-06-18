@@ -8,8 +8,7 @@ declare(strict_types=1);
 
 namespace EcomDev\AsyncLog;
 
-
-interface LogReader
+interface LogObserver
 {
-
+    public function receivedLine(string $logLine): void;
 }

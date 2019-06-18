@@ -8,8 +8,7 @@ declare(strict_types=1);
 
 namespace EcomDev\AsyncLog;
 
-
-class LogWriter
+interface FileWriter
 {
-
+    public function write(string $data): void;
 }
